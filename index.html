@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Perpustakaan Online Silvi 📚✨</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu li {
+            display: inline;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .menu a:hover {
+            color: #0056b3;
+        }
+
+        /* Animasi Buku */
+        .book {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            font-size: 50px;
+            animation: floatBook 3s infinite ease-in-out alternate;
+        }
+
+        @keyframes floatBook {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(10px) rotate(5deg); }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,52 +63,22 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Perpustakaan online Silvi</h1>
-        <b1> Perpustakaan Digital Silvi – Dunia Pengetahuan dalam Genggaman! 📚✨
-         Akses buku, di mana saja. Mari jelajahi ilmu tanpa batas!.</b2></p>
+        <h1>Perpustakaan Online Silvi 📖✨</h1>
+        <p>Perpustakaan Digital Silvi – Dunia Pengetahuan dalam Genggaman! 📚✨</p>
+        <p>Akses buku di mana saja. Mari jelajahi ilmu tanpa batas!</p>
     </main>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Saya</title>
-    <style>
-        h1 {
-      text-align: center;
-    }
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
 
     <p>Klik tombol di bawah untuk mengunjungi Perpustakaan USU:</p>
-
     <a href="https://library.usu.ac.id/" target="_blank" class="btn">
         Kunjungi Perpustakaan USU
     </a>
 
-</body>
-</html>
+    <!-- Memanggil file script.js -->
     <script src="script.js"></script>
 </body>
 </html>

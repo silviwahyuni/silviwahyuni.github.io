@@ -1,86 +1,169 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Online Silvi 📚✨</title>
-    <style>
-        body {
-            background-color: #f0f8ff;
-            margin: 0;
-            overflow: hidden;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perpustakaan Online Silvi 📚✨</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
 
-        header {
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
+    header {
+      background-color: #0288d1;
+      padding: 20px;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
 
-        .menu {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    nav .menu {
+      list-style: none;
+      margin: 0;
+      padding: 10px 0;
+      background-color: #b3e5fc;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
 
-        .menu li {
-            display: inline;
-        }
+    .menu a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #01579b;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
 
-        .menu a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #007bff;
-        }
+    .menu a:hover {
+      background-color: #0288d1;
+      color: white;
+    }
 
-        .menu a:hover {
-            color: #0056b3;
-        }
+    main {
+      padding: 50px 20px;
+    }
 
-        /* Animasi Buku */
-        .book {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            font-size: 50px;
-            animation: floatBook 3s infinite ease-in-out alternate;
-        }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #00796b;
+    }
 
-        @keyframes floatBook {
-            0% { transform: translateY(0px) rotate(0deg); }
-            100% { transform: translateY(10px) rotate(5deg); }
-        }
-    </style>
+    p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: #fff3e0;
+      border-left: 6px solid #ff9800;
+      padding: 15px;
+      margin: 30px auto;
+      max-width: 600px;
+      font-style: italic;
+      font-size: 17px;
+      color: #5d4037;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 26px;
+      background-color: #43a047;
+      color: white;
+      font-size: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2e7d32;
+    }
+
+    .book {
+      position: absolute;
+      font-size: 40px;
+      animation: floatBook 3s infinite ease-in-out alternate;
+      opacity: 0.7;
+    }
+
+    .book:nth-child(1) { top: 70%; left: 10%; animation-delay: 0s; }
+    .book:nth-child(2) { top: 65%; left: 80%; animation-delay: 1s; }
+    .book:nth-child(3) { top: 80%; left: 50%; animation-delay: 2s; }
+
+    @keyframes floatBook {
+      0% { transform: translateY(0px) rotate(0deg); }
+      100% { transform: translateY(-15px) rotate(8deg); }
+    }
+
+    footer {
+      background-color: #eeeeee;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav .menu {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn {
+        padding: 12px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Menu Registrasi -->
-                    <li class="nav-item"><a class="nav-link" href="registration.html" id="registration">Registrasi</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Perpustakaan Online Silvi 📖✨</h1>
-        <p>Perpustakaan Digital Silvi – Dunia Pengetahuan dalam Genggaman! 📚✨</p>
-        <p>Akses buku di mana saja. Mari jelajahi ilmu tanpa batas!</p>
-    </main>
+  <header>
+    Perpustakaan Online Silvi 📚✨
+  </header>
 
-    <p>Klik tombol di bawah untuk mengunjungi Perpustakaan USU:</p>
-    <a href=https://digilib.undip.ac.id/v1/target="_blank" class="btn">
-        Kunjungi Perpustakaan Undip
-    </a>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+      <li><a href="registration.html">Registrasi</a></li>
+    </ul>
+  </nav>
 
-    <!-- Memanggil file script.js -->
-    <script src="script.js"></script>
+  <main>
+    <h1>🌟 Gemar Membaca, Kunci Masa Depan! 🌟</h1>
+    <p>Selamat datang di <strong>Perpustakaan Digital Silvi</strong> – tempatmu menemukan ribuan buku menarik, dari fiksi hingga ilmu pengetahuan.</p>
+    <p>Ayo baca, jelajah, dan tumbuhkan pengetahuanmu tanpa batas!</p>
+
+    <div class="highlight">
+      "Orang yang berhenti membaca adalah orang yang berhenti tumbuh." – Dr. Seuss
+    </div>
+
+    <a href="https://digilib.undip.ac.id/v1/" target="_blank" class="btn">📖 Kunjungi Perpustakaan Undip</a>
+  </main>
+
+  <!-- Animasi buku -->
+  <div class="book">📘</div>
+  <div class="book">📙</div>
+  <div class="book">📕</div>
+
+  <footer>
+    © 2025 Perpustakaan Online Silvi | Dibuat dengan semangat literasi 📖✨
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

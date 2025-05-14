@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabel Perkalian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f1f8e9;
+      padding: 20px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+    }
+    th {
+      background-color: #aed581;
+    }
+    td {
+      background-color: #e6ee9c;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Tabel Perkalian 1 – 10</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>X</th>
+        <!-- Header 1-10 -->
+        <script>
+          for (let i = 1; i <= 10; i++) {
+            document.write(`<th>${i}</th>`);
+          }
+        </script>
+      </tr>
+    </thead>
+    <tbody>
+      <script>
+        for (let i = 1; i <= 10; i++) {
+          document.write("<tr>");
+          document.write(`<th>${i}</th>`);
+          for (let j = 1; j <= 10; j++) {
+            document.write(`<td>${i * j}</td>`);
+          }
+          document.write("</tr>");
+        }
+      </script>
+    </tbody>
+  </table>
+</body>
+</html>
